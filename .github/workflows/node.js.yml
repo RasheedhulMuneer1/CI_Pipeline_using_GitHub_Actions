@@ -2,7 +2,7 @@ name: Node.js CI
 
 on: 
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs: 
   build:
@@ -16,6 +16,6 @@ jobs:
      uses: actions/setuo-node@v3
      with:
        node-version: '20'
-       
+
     -run: npm install
     -run: npm test       
